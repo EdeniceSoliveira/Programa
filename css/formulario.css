@@ -1,0 +1,194 @@
+/* Estilos para a página "Fale Conosco" */
+
+/* Estilos gerais */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffdbdb; /* Cor de fundo */
+}
+
+.container {
+  max-width: 1068px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #FFCFFF; /* Cor de fundo do cabeçalho */
+  color: #ffffff; /* Cor do texto no cabeçalho */
+  padding: 20px 0;
+  text-align: center;
+}
+
+header .logo {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url('amor2.png');
+  background-size: cover;
+  margin-right: 10px;
+}
+
+/* Estilos para a barra de navegação (nav) */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  background: #FFCFFF; /* Cor de fundo da barra de navegação */
+  z-index: 100;
+}
+
+/* Estilos para o logotipo */
+.logotipo {
+  order: 1;
+  width: 80px;
+  height: auto;
+  order: 1;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url('amor2.png');
+  margin-right: 10px;
+  padding: 10px;
+}
+
+/* Estilos para os links de navegação */
+.nav-links {
+  order: 2;
+  display: flex;
+  gap: 20px;
+}
+
+/* Estilos para os links de navegação (ativos) */
+.nav-link.active {
+  border: 2px solid #443636; /* Cor e largura da borda */
+  border-radius: 5px; /* Borda arredondada */
+  padding: 5px 10px; /* Espaçamento interno para destacar melhor */
+}
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para os campos do formulário */
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Estilos para os rótulos dos campos */
+.form-container label {
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* Estilizar o botão "Enviar" e "Limpar" */
+.form-container input[type="submit"],
+.form-container input[type="reset"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.form-container input[type="submit"]:hover,
+.form-container input[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para o botão de voltar */
+.btn-voltar {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #ff69b4; /* Cor de fundo rosa */
+  color: #ffffff; /* Cor do texto branco */
+  padding: 10px 20px;
+  text-decoration: none; /* Remover sublinhado de link */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-voltar:hover {
+  background-color: #ff1493; /* Rosa mais escuro ao passar o mouse */
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  /* Estilos gerais */
+  body {
+    background-color: #ffdbdb;
+  }
+
+  /* Cabeçalho */
+  header {
+    background-color: #FFCFFF;
+    padding: 10px 0;
+  }
+
+  header .logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    padding: 5px;
+  }
+
+  /* Estilos para a barra de navegação (nav) */
+  .nav {
+    padding: 10px 0;
+  }
+
+  /* Estilos para os links de navegação */
+  .nav-links {
+    gap: 10px;
+  }
+
+  /* Estilos para os links de navegação (ativos) */
+  .nav-link.active {
+    padding: 5px 10px;
+  }
+
+  /* Estilos para o botão de voltar */
+  .btn-voltar {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .btn-voltar:hover {
+    background-color: #ff1493;
+  }
+
+  /* Estilos para o formulário */
+  .form-container input[type="text"],
+  .form-container input[type="password"],
+  .form-container select {
+    font-size: 14px;
+  }
+
+  .form-container label {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  .form-container input[type="submit"],
+  .form-container input[type="reset"] {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}

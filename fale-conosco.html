@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Laços de Amor</title>
+    <!-- Adicione link CSS -->
+    <link rel="stylesheet" href="CSS/falei.css"> 
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <!-- Caixa branca envolvendo o nav -->
+            <div class="nav-container">
+                <!-- Nav -->
+                <div class="nav">
+                    <!-- Logo com um link para a página inicial -->
+                    <a href="index.html" class="nav-logo">
+                        <img src="img/amor2.png" alt="" class="logotipo">
+                    </a>
+                    <!-- Links de navegação -->
+                    <div class="nav-links">
+                        <a href="lolja.html" class="nav-link">Compre Nossos Produtos</a>
+                        <a href="fale-conosco.html" class="nav-link">Fale Conosco</a>
+                        <a href="trabalhe-conosco.html" class="nav-link">Trabalhe Conosco</a>
+                        <a href="sobre-a-aluna.html" class="nav-link">Sobre a Aluna</a>
+                        <a href="cliente.html" class="nav-link">Cliente</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+            <!-- Formulário de Contato -->
+<section class="contact">
+    <div class="container">
+         <h2 class="section-title">Fale Conosco</h2>
+            <form id="contact-form" action="processar_formulario.php" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Informações de Localização -->
+            <div class="location">
+                <h2>Localização</h2>
+                <p>Estamos localizados em Salvador, Bahia.</p>
+                <p>Endereço: Estr. Velha Pirajá, 123</p>
+                <p>CEP: 40000-000</p>
+            </div>
+            <!-- Botão de Voltar para a Página Inicial -->
+            <a href="index.html" class="btn-voltar">Voltar à Página Inicial</a>
+        </div>
+    </section>
+    <footer>
+        <!-- Adicione um rodapé, se desejar -->
+    </footer>
+</body>
+</html>

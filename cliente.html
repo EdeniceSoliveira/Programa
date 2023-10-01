@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Laços de Amor</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav">
+                    <a href="index.html" class="nav-logo">
+                        <img src="img/amor2.png" alt="" class="logotipo">
+                    </a>
+                    <div class="nav-links">
+                        <a href="lolja.html" class="nav-link">Compre Nossos Produtos</a>
+                        <a href="fale-conosco.html" class="nav-link">Fale Conosco</a>
+                        <a href="trabalhe-conosco.html" class="nav-link">Trabalhe Conosco</a>
+                        <a href="sobre-a-aluna.html" class="nav-link">Sobre a Aluna</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Prezado Cliente, Seja Bem-vindo</h1>
+        <p>Preencha o formulário abaixo:</p>
+
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <label for="nome">Nome: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="nome">
+                        </td>
+                        <td>
+                            <label for="sobrenome">Sobrenome: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="sobrenome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Nascimento: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="dia" size="2" maxlength="2" value="dd">
+                            <input type="text" name="mes" size="2" maxlength="2" value="mm">
+                            <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="rg">RG: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="rg" size="13" maxlength="13">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>CPF:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="cpf" size="9" maxlength="9"> - <input
+                            type="text" name="cpf2" size="2" maxlength="2">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>Dados de Endereço</legend>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <label for="rua">Rua:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="rua">
+                        </td>
+                        <td>
+                            <label for="numero">Numero:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="numero" size="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="bairro">Bairro: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="bairro">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="estado">Estado:</label>
+                        </td>
+                        <td align="left">
+                            <select name="estado">
+                                <option value="ac">Acre</option>
+                                <option value="al">Alagoas</option>
+                                <option value="am">Amazonas</option>
+                                <!-- Outros estados aqui -->
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cidade">Cidade: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="cidade">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cep">CEP: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="cep" size="5" maxlength="5"> - <input
+                            type="text" name="cep2" size="3" maxlength="3">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de Login</legend>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <label for="email">E-mail: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="login">Login de usuário: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="login">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pass">Senha: </label>
+                        </td>
+                        <td align="left">
+                            <input type="password" name="pass">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="passconfirm">Confirme a senha: </label>
+                        </td>
+                        <td align="left">
+                            <input type="password" name="passconfirm">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br />
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+        <!-- Botão de Voltar para a Página Inicial -->
+        <a href="index.html" class="btn-voltar">Voltar à Página Inicial</a>
+    </div>
+</body>
+</html>

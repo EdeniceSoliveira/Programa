@@ -1,0 +1,92 @@
+/* Estilos para um visual mais infantil */
+body {
+  background-image: url('backg.jpg');
+  background-size: cover; /* Isso garante que a imagem cubra todo o plano de fundo */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-attachment: fixed; /* Fixa a imagem de fundo para que ela não role com a página */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #ffcfff00; /* Um tom mais vibrante de rosa */
+  color: #fff; /* Texto em branco */
+  padding: 20px 0;
+  text-align: left; /* Centralize o conteúdo do cabeçalho */
+}
+
+
+/* Logo com um estilo lúdico */
+.nav-logo img {
+  width: 80px;
+  height: auto;
+  object-fit: contain; /* Evita distorção da imagem */
+}
+
+/* Botão "Compre nossos produtos" com um estilo de botão de criança */
+.cta-link {
+  display: inline-block; /* Torna o link um elemento de bloco */
+  padding: 12px 20px; /* Espaçamento interno */
+  background-color: #ff00c8; /* Cor de fundo rosa */
+  color: #fff; /* Cor do texto branca */
+  font-size: 18px; /* Tamanho da fonte */
+  text-decoration: none; /* Remove sublinhado padrão */
+  border-radius: 5px; /* Borda arredondada */
+  transition: background-color 0.3s; /* Transição suave de cor ao passar o mouse */
+}
+
+/* Estilo ao passar o mouse */
+.cta-link:hover {
+  background-color: #ff0099; /* Cor de fundo rosa mais escura */
+  text-decoration: none; /* Evita que o sublinhado reapareça */
+}
+
+/* Conteúdo principal */
+.about {
+  text-align: center; /* Centralize o texto */
+  padding: 20px;
+}
+
+.about h1 {
+  font-size: 36px; /* Tamanho de fonte maior para manter o visual infantil */
+  color: #ff00c8; /* Cor brilhante para o título */
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 18px; /* Texto maior para facilitar a leitura */
+  line-height: 1.6; /* Espaçamento entre linhas ligeiramente menor */
+  margin-bottom: 20px;
+}
+
+/* Mapa do Google Maps */
+.map iframe {
+  width: 100%;
+  height: 400px; /* Aumente a altura para torná-lo mais proeminente */
+  border: none;
+}
+
+/* Rodapé */
+footer {
+  background-color: #ff8c8c; /* Correspondente ao cabeçalho */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Altere a cor dos links para algo mais brincalhão */
+.nav-link {
+  color: #df80fc; /* Rosa brilhante */
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  /* Aplique estilos adicionais para telas pequenas, se necessário */
+  .nav-links {
+    top: 100px; /* Ajuste a posição vertical dos links para não sobrepor o cabeçalho */
+  }
+
+  .cta-button {
+    font-size: 18px; /* Reduza o tamanho do botão para telas menores */
+    padding: 10px 20px; /* Espaçamento interno menor */
+  }
+}
